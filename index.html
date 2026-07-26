@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic-Tac-Toe — Prodigy InfoTech Task 03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <div class="app-header">
+    <div class="id">
+        <span class="mark">P</span>
+        <div>
+        <h1>Tic-Tac-Toe</h1>
+        <span>Prodigy InfoTech · Task 03</span>
+        </div>
+    </div>
+    <button class="icon-btn" id="themeToggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+    </div>
+
+    <div class="mode-row">
+    <button class="mode-btn active" id="modePvp">2 Players</button>
+    <button class="mode-btn" id="modeAi">Vs Computer</button>
+    </div>
+    <div class="diff-row hidden" id="diffRow">
+    <button class="diff-btn" id="diffEasy">Easy</button>
+    <button class="diff-btn active" id="diffHard">Unbeatable</button>
+    </div>
+
+    <div class="status-bar" id="statusBar">Turn: <span class="turn-x">X</span></div>
+
+    <div class="board" id="board"></div>
+
+    <div class="controls">
+    <button class="btn-new" id="newRoundBtn">New Round</button>
+    <button class="btn-clear" id="clearScoreBtn">Reset Scores</button>
+    </div>
+
+    <div class="score-row">
+    <div class="score-box x"><div class="label">Player X</div><div class="value" id="scoreX">0</div></div>
+    <div class="score-box draw"><div class="label">Draws</div><div class="value" id="scoreDraw">0</div></div>
+    <div class="score-box o"><div class="label" id="scoreOLabel">Player O</div><div class="value" id="scoreO">0</div></div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script></script>
+</body>
+</html>
